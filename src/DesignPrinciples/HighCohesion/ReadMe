@@ -1,0 +1,11 @@
+DesignPrinciples.HighCohesion Software Design Principle
+real world example of the Books Management
+
+with the DesignPrinciples.HighCohesion Software Design Principle
+In the Book class all methods are related to the Book class, so the Book class is highly cohesive.
+no other unrelated methods are added to the Book class.
+
+
+without the DesignPrinciples.HighCohesion Software Design Principle
+in the book class some methods are related to the Book class and some methods are not related to the Book class.
+so the Book class is not highly cohesive.
