@@ -1,0 +1,16 @@
+Information expert principle of grasp :
+Real world problem : Library Management System
+
+
+With Information Expert:
+
+The code with the Information Expert principle adheres to the GRASP design principle by ensuring
+that each class (e.g., Library and Book) is responsible for managing its own information and operations.
+This promotes encapsulation and a clean, modular design, where classes possess the most knowledge about their related data.
+
+Without Information Expert:
+
+In contrast, the code without adhering to the Information Expert principle violates GRASP principles.
+It centralizes knowledge and operations that should be distributed across classes, resulting in a less modular and less encapsulated design.
+For example, the Library class is no longer responsible for managing its books, leading to a less maintainable and less organized codebase.
+In library class we create the book class object and add books from the library class.
