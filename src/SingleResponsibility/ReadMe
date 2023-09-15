@@ -1,0 +1,16 @@
+
+real world problem: Book management system
+
+
+
+with Single Responsibility Principle
+In the book class all the methods are related to book management. So it is following Single Responsibility Principle.
+the priceCalculator class is for calculating the price of the book. So it is following Single Responsibility Principle.
+the shippingCalculator class is for calculating the shipping cost of the book. So it is following Single Responsibility Principle.
+and the book class method is calling the priceCalculator and shippingCalculator class method. So it is following Single Responsibility Principle.
+
+```
+
+without Single Responsibility Principle)
+the all price and shipping cost calculation method is in the book class. So it is not following Single Responsibility Principle.
+
