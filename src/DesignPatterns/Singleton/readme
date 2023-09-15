@@ -1,0 +1,17 @@
+
+Real world example implement with singleton design pattern
+Grammar Checking :
+
+with singleton design pattern:
+In a Grammar Checking system implemented with the Singleton design pattern,
+we ensure that there is only one instance of the GrammarChecker class shared across the entire
+application. This ensures efficient resource usage and consistent grammar checking
+throughout the application. It's particularly useful when multiple parts
+of the application need to access and use the same grammar checking service.
+
+
+without singleton design pattern:
+In a Grammar Checking system implemented without the Singleton pattern,
+each part of the application might create its own instance of the GrammarChecker class
+when needed. This can lead to multiple instances, potentially consuming more resources
+and causing inconsistencies in grammar checking rules and data.
