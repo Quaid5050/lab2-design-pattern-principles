@@ -12,9 +12,19 @@ public class ObserverPatternDemo
         System.out.println("Main Class: ObserverPatternDemo");
         Subject subject = new Subject();
 
-        new HexaObserver(subject);
-        new OctalObserver(subject);
-        new BinaryObserver(subject);
+        HexaObserver hexa =new HexaObserver(subject);
+        OctalObserver octal = new OctalObserver(subject);
+        BinaryObserver binary= new BinaryObserver(subject);
+
+        System.out.println("First state change: 15");
+        subject.setState(15);
+
+        //Now here unsubscribe the observer using the detach method of the subject class
+        subject.detach(hexa);
+
+        //now change the state of the subject class and notify the 2 observers octal and binary which are still subscribed
+        System.out.println("Second state change: 10");
+        subject.setState(10);
 
 
 

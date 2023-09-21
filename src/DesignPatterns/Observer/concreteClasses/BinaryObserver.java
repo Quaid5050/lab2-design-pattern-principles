@@ -8,7 +8,6 @@ public class BinaryObserver extends Observer {
     public BinaryObserver(Subject subject) {
         this.subject = subject;
         subject.attach(this);
-
         System.out.println("BinaryObserver: BinaryObserver()");
     }
     @Override

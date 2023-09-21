@@ -28,5 +28,18 @@ public class Subject {
          }
      }
 
+     public void detach(Observer observer){
+         System.out.println("Subject: before detach()");
+         System.out.println("Size: observer = " + observers.size());
+         System.out.println("Subject: observers = " + observers);
+
+         //Unsubscribe the observer
+         observers.remove(observer);
+
+         System.out.println("Subject: after detach()");
+         System.out.println("Size: observer = " + observers.size());
+         System.out.println("Subject: observers = " + observers);
+
+     }
 
 }
