@@ -20,8 +20,5 @@ public class StrategyDemo {
         System.out.println("Compute in range 10 and 5 = " + context.computeInRange(10, 5));
         System.out.println("Compute in range 1000 and 5000 = " + context.computeInRange(1000, 5000));
         System.out.println("Compute in range 10000 and  20000 = " + context.computeInRange(10000, 20000));
-
-
-
     }
 }
