@@ -1,7 +1,12 @@
 package DesignPatterns.Mediator;
 
-public class User {
+public class User implements Userinterface{
     private String name;
+
+    @Override
+    public void sendMessage(Userinterface user, String message) {
+        ChatRoom.showMessage(this,message);
+    }
 
     public String getName() {
         return name;
