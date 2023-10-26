@@ -2,17 +2,19 @@ package DesignPatterns.Builder;
 
 public class MealBuilder {
 
-    public Meal prepareVegMeal (){
-        Meal meal = new Meal();
-        meal.addItem(new VegBurger());
-        meal.addItem(new Coke());
+    public Meal createCustomMeal() {
+        return new Meal();
+    }
+
+    public Meal addBurger(Meal meal, Burger burger) {
+        meal.addItem(burger);
         return meal;
     }
 
-    public Meal prepareNonVegMeal (){
-        Meal meal = new Meal();
-        meal.addItem(new ChickenBurger());
-        meal.addItem(new Pepsi());
+    public Meal addBeverage(Meal meal, ColdDrink beverage) {
+        meal.addItem(beverage);
         return meal;
     }
+
+
 }
