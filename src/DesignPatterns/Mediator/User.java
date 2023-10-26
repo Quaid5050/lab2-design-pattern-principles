@@ -5,7 +5,7 @@ public class User implements Userinterface{
 
     @Override
     public void sendMessage(Userinterface user, String message) {
-        ChatRoom.showMessage(this,message);
+//        ChatRoom.showMessage(this,message);
     }
 
     public String getName() {
@@ -21,6 +21,6 @@ public class User implements Userinterface{
     }
 
     public void sendMessage(String message){
-        ChatRoom.showMessage(this,message);
+//        ChatRoom.showMessage(this,message);
     }
 }
