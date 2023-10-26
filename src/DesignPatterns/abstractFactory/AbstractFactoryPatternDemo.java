@@ -29,7 +29,7 @@ public class AbstractFactoryPatternDemo {
         shape4.draw();
 
         // Create and display the new products: Double Bordered Rectangle and Double Bordered Triangle
-        AbstractFactory doubleBorderFactory = FactoryProducer.getDoubleBorderFactory();
+        AbstractFactory doubleBorderFactory = FactoryProducer.getDoubleBorderFactory(true);
 
         Shape shape5 = doubleBorderFactory.getShape("DOUBLERECTANGLE");
         shape5.draw();

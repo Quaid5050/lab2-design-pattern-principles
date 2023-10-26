@@ -9,7 +9,11 @@ public class FactoryProducer {
         }
     }
 
-    public static AbstractFactory getDoubleBorderFactory() {
-        return new DoubleBorderFactory();
+    public static AbstractFactory getDoubleBorderFactory(boolean doubleBorder) {
+        if (doubleBorder) {
+            return new DoubleBorderFactory();
+        }
+        //any other factory in future can be added here
+        return null;
     }
 }
