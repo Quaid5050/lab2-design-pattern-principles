@@ -8,4 +8,8 @@ public class FactoryProducer {
             return new ShapeFactory();
         }
     }
+
+    public static AbstractFactory getDoubleBorderFactory() {
+        return new DoubleBorderFactory();
+    }
 }
