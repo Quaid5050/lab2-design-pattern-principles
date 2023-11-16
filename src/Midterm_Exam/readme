@@ -1,7 +1,0 @@
-you have an array of students (name,register,descipline, semester) and a dictionary/map of lab
-computer (length , os, tools) and the teacher wats to allocate each linux os  computer to odd register
-student vise versa for windows os computer. print this allocation as  linux list x windows list with allocated student to it pc.
-
-now using the pleass and gangafor design pattrns there are two design patterns
-will be implemented here efirst is iterator and another is the strategy .
-the iterator is for allocation and strategy is for
