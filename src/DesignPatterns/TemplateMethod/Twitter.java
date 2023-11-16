@@ -4,12 +4,8 @@
  */
 package DesignPatterns.TemplateMethod;
 
-import GOF.DP_Lab6.TemplateMethod.LabTask.*;
 
-/**
- *
- * @author Zain
- */
+
 
 public class Twitter extends Network {
     public Twitter(String userName, String password) {
