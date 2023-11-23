@@ -9,12 +9,7 @@ package DesignPatterns.TemplateMethod;
  * @author Zain
  */
 
-import GOF.DP_Lab6.TemplateMethod.LabTask.*;
-//import GOF.DP_Lab6.TemplateMethod.LabTask.Facebook;
-//import GOF.DP_Lab6.TemplateMethod.LabTask.Network;
-//import GOF.DP_Lab6.TemplateMethod.LabTask.Twitter;
-//import GOF.DP_Lab6.TemplateMethod.LabTask.LinkedIn;
-//import GOF.DP_Lab6.TemplateMethod.LabTask.Message;
+
 
 
 import java.io.BufferedReader;
