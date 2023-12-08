@@ -1,6 +1,5 @@
 package DesignPatterns.Flyweight;
 
-
 import java.awt.Graphics;
 
 public class Tree {

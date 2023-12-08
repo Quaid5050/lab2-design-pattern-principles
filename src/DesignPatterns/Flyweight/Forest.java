@@ -1,6 +1,5 @@
 package DesignPatterns.Flyweight;
 
-
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.List;
