@@ -1,6 +1,7 @@
 package DesignPatterns.Flyweight;
 
-import java.awt.*;
+
+import java.awt.Color;
 
 public class Demo {
     static int CANVAS_SIZE = 500;
@@ -10,10 +11,19 @@ public class Demo {
     public static void main(String[] args) {
         Forest forest = new Forest();
         for (int i = 0; i < Math.floor(TREES_TO_DRAW / TREE_TYPES); i++) {
+            ITreeType type = TreeTypeFactory.getTreeType(
+                    "Summer Oak", Color.GREEN, "Oak texture stub"
+            );
+
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Summer Oak", Color.GREEN, "Oak texture stub");
+                    type, ForestSize.SOUTH);
+
+            ITreeType anotherType = TreeTypeFactory.getTreeType(
+                    "Autumn Oak", Color.ORANGE, "Autumn Oak texture stub"
+            );
+
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Autumn Oak", Color.ORANGE, "Autumn Oak texture stub");
+                    anotherType, ForestSize.MIDDLE);
         }
         forest.setSize(CANVAS_SIZE, CANVAS_SIZE);
         forest.setVisible(true);
