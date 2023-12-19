@@ -42,14 +42,10 @@ class Canvas extends java.awt.Canvas {
         addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                if ((e.getModifiers() & KeyEvent.CTRL_MASK) != 0) {
+                if ((e.getModifiersEx() & KeyEvent.CTRL_MASK) != 0) {
                     switch (e.getKeyCode()) {
-                        case KeyEvent.VK_Z:
-                            editor.undo();
-                            break;
-                        case KeyEvent.VK_R:
-                            editor.redo();
-                            break;
+                        case KeyEvent.VK_Z -> editor.undo();
+                        case KeyEvent.VK_R -> editor.redo();
                     }
                 }
             }
