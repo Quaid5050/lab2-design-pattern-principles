@@ -1,14 +1,12 @@
-package Practice;
+//package Practice;
 
 interface SupportHandler {
     void handleRequest(String request);
-
     void setNextHandler(SupportHandler nextHandler);
 }
 
 class BaseSupportHandler implements SupportHandler {
     private SupportHandler nextHandler;
-
     @Override
     public void handleRequest(String request) {
         if (nextHandler != null) {
@@ -17,9 +15,9 @@ class BaseSupportHandler implements SupportHandler {
             System.out.println("Request cannot be handled.");
         }
     }
-
     @Override
     public void setNextHandler(SupportHandler nextHandler) {
+
         this.nextHandler = nextHandler;
     }
 }
